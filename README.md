@@ -275,19 +275,11 @@ This project is licensed under the MIT License - see LICENSE file for details.
 
 ---
 
-## 👥 Authors
-
-- [Your Name] - Data Science & Model Development
-- [Medical Student 1] - Clinical Interpretation & Writing
-- [Medical Student 2] - Literature Review & Writing
-
----
-
 ## 🙏 Acknowledgments
 
 - **PhysioNet & MIT-LCP** for providing MIMIC-IV database
 - **Beth Israel Deaconess Medical Center** for data collection
-- [Your institution/hackathon name]
+- Made for MD+ Hackathon
 
 ---
 
