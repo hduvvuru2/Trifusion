@@ -1,0 +1,53 @@
+
+MACHINE LEARNING MODEL TRAINING SUMMARY
+========================================
+
+Dataset:
+  - Total samples: 545,497
+  - Training set: 436,397 (80.0%)
+  - Test set: 109,100 (20.0%)
+  - Positive class (deaths): 11,792 (2.16%)
+
+Models Trained:
+  1. Logistic Regression: AUROC = 0.9802
+  2. Random Forest: AUROC = 0.9691
+  3. Random Forest (Tuned): AUROC = 0.9830
+  4. Gradient Boosting: AUROC = 0.9819
+  5. Gradient Boosting (Tuned): AUROC = 0.9846
+
+BEST MODEL: Gradient Boosting (Tuned)
+====================================
+  Test AUROC: 0.9846
+  Optimal Threshold: 0.0197
+
+Performance Metrics:
+  - Sensitivity (Recall): 0.9491
+  - Specificity: 0.9366
+  - Positive Predictive Value (Precision): 0.2484
+  - Negative Predictive Value: 0.9988
+  - Accuracy: 0.9368
+  - F1 Score: 0.3938
+
+Confusion Matrix:
+  - True Negatives: 99,971
+  - False Positives: 6,771
+  - False Negatives: 120
+  - True Positives: 2,238
+
+Interpretation:
+  - The model correctly identifies 94.9% of patients who will die
+  - The model correctly identifies 93.7% of patients who will survive
+  - When model predicts death, it's correct 24.8% of the time
+  - When model predicts survival, it's correct 99.9% of the time
+
+Clinical Implications:
+  - High AUROC (>0.98) indicates excellent discriminative ability
+  - Model can be used to stratify patients by mortality risk
+  - Could enable early intervention for high-risk patients
+  - Supports value-based care by optimizing resource allocation
+
+Next Steps:
+  - Validate on external datasets
+  - Develop clinical decision support tool
+  - Create patient-facing risk calculator
+  - Proceed to model interpretation and deployment planning

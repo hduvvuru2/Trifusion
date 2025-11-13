@@ -1,0 +1,79 @@
+git --version
+# Should show something like: git version 2.39.1
+```
+
+---
+
+## 📝 Step 2: Create Essential Files
+
+### **A. Create `.gitignore` file**
+
+**What this does:** Tells Git which files to NEVER upload (data files, temp files, etc.)
+
+**How to create it:**
+
+1. Open **Notepad** (Windows) or **TextEdit** (Mac)
+2. Copy-paste this content:
+```
+# ============================================
+# DATA FILES - NEVER UPLOAD THESE
+# ============================================
+*.csv
+*.csv.gz
+*.xlsx
+*.xls
+*.db
+*.sqlite
+
+# Specific MIMIC data files
+admissions.csv*
+patients.csv*
+diagnoses_icd.csv*
+diagnoses_cleaned*
+drgcodes.csv*
+d_icd_diagnoses.csv*
+merged_admissions_patients.csv*
+
+# Large output files with patient data
+test_predictions.csv
+base_scores.csv
+final_features.csv
+
+# ============================================
+# JUPYTER NOTEBOOK TEMP FILES
+# ============================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ============================================
+# PYTHON CACHE FILES
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============================================
+# SYSTEM FILES
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# ENVIRONMENT FILES
+# ============================================
+.env
+.venv
+env/
+venv/
+
+# ============================================
+# WHAT WE *DO* WANT TO UPLOAD:
+# ============================================
+# - Jupyter notebooks (*.ipynb)
+# - Charts/figures (*.png)
+# - Model files (*.pkl) - if <100MB
+# - Summary reports (*.txt)
+# - Small result CSVs (<1MB)
+# - Documentation (*.md, *.html)

@@ -1,0 +1,47 @@
+
+FEATURE ENGINEERING SUMMARY
+============================
+
+Final Feature Set:
+  - Total hospitalizations: 545,497
+  - Features per record: 21
+
+Modifiers Added:
+  1. Diagnosis Count:
+     - Mean: 11.67
+     - Contribution: 0.5834
+
+  2. Length of Stay:
+     - Mean: 4.76 days
+     - Contribution: 0.0476
+
+  3. Age:
+     - Mean: 56.9 years
+     - Contribution: 0.3890
+
+  4. Synergies:
+     - Cases with synergies: 30,438 (5.58%)
+     - Mean contribution: 0.0081
+
+Synergy Prevalence:
+  - Heart Failure + Pneumonia: 4,289
+  - Sepsis + Kidney Disease: 3,846
+  - Diabetes + Kidney Disease: 23,156
+  - COPD + Pneumonia: 2,626
+  - Liver Disease + Sepsis: 2,078
+
+Score Performance:
+  - Base Score AUROC: 0.9307
+  - Adjusted Score AUROC: 0.6852
+  - Improvement: -26.37%
+
+Adjusted Score Statistics:
+  - Mean (All): 0.8579
+  - Mean (Died): 0.9996
+  - Mean (Survived): 0.8548
+
+Next Steps:
+  - Train machine learning models
+  - Optimize hyperparameters
+  - Compare model performance
+  - Proceed to Notebook 04

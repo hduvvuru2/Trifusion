@@ -1,0 +1,34 @@
+
+EMPIRICAL RISK CALCULATION SUMMARY
+===================================
+
+Variable X (Total Diagnosis Counts):
+  - Unique ICD codes: 28,562
+  - Range: 1 to 102368
+  - Reliable diagnoses (X≥10): 12,842
+
+Variable Y (Death-Linked Counts):
+  - ICD codes in deaths: 9,022
+  - Top risky diagnosis: G9382 (risk=1.0000)
+
+Diagnosis Risk (Y/X):
+  - Mean: 0.0366
+  - Median: 0.0163
+  - Range: 0.0000 to 1.0000
+
+Variable Z (DRG Mortality Rates):
+  - Level 1: 0.0008
+  - Level 2: 0.0035
+  - Level 3: 0.0196
+  - Level 4: 0.1650
+
+Base Scores:
+  - Computed for: 545,497 hospitalizations
+  - Mean (Died): 0.9769
+  - Mean (Survived): 0.3861
+  - Base Score AUROC: 0.9307
+
+Next Steps:
+  - Add modifiers (age, LOS, diagnosis count)
+  - Detect synergistic pathologies
+  - Proceed to Notebook 03
