@@ -294,8 +294,8 @@ This project is licensed under the MIT License - see LICENSE file for details.
 ## 📧 Contact
 
 For questions about this project:
-- Email: [your email]
-- GitHub: [your username]
+- Email: hduvvur@iu.edu
+- GitHub: hduvvuru2
 
 ---
 
